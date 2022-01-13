@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import {useState } from "react"
 import './App.css';
+import Search from './components/Search'
+import List from './components/List'
 
 function App() {
+
+  const [users, setUsers] = useState([])
+  const [isFirstTime, setIsFirstTime] = useState(true)
+  const [isLoading, setIsLoading] = useState(false)
+  const [errorMessage, setErrorMessage] = useState ('')
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="app">
+      <Search setUsers={setUsers} setIsFirstTime={setIsFirstTime} setIsLoading={setIsLoading} setErrorMessage={setErrorMessage}/>
+      <List users={users} isFirstTime={isFirstTime} isLoading={isLoading} errorMessage={errorMessage}/>
+    </section>
   );
 }
 

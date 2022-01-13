@@ -1,0 +1,20 @@
+.search-container {
+    background: rgb(204, 199, 199);
+    height: 150px;
+    padding-left: 100px;
+}
+.search-title {
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+.search-value {
+    margin-right: 10px;
+}
+
+.search-button{
+    font-weight: 600;
+    font-size: 0.875rem;
+    border: 2px solid transparent;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    width: 5rem;
+}
