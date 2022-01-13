@@ -2,7 +2,7 @@
   "name": "user-search",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://xinganwang.github.io",
+  "homepage": "https://xinganwang.github.io/user-search",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
